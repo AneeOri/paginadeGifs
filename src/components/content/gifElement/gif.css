@@ -1,0 +1,15 @@
+.gif_wrapper {
+  width: 120px;
+  height: 120px;
+  border: 1px solid rgb(65, 216, 171);
+  margin: 15px;
+  overflow: hidden;
+  box-shadow: 5px 5px 7px 0px rgba(109, 104, 104, 0.73);
+  border-radius: 10px;
+}
+.gif_wrapper img {
+  height: 120px;
+}
+.dark .gif_wrapper {
+  border: 1px solid rgb(123, 10, 199);
+}

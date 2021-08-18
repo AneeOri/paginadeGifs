@@ -1,0 +1,17 @@
+.contentContainer {
+  display: flex;
+  align-items: center;
+  align-content: flex-end;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-bottom: 200px;
+  margin-left: 50px;
+}
+.fraseContent {
+  display: inline-block;
+  font-size: 21px;
+  color: #7839cd;
+}
+.fraseContent.dark {
+  color: rgb(65, 216, 171);
+}

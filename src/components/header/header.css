@@ -1,0 +1,25 @@
+* {
+  margin-top: 2px;
+  padding: 0;
+  box-sizing: border-box;
+}
+.headerContainer {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.headerNavbar {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 20px;
+}
+.botonTema {
+  width: 100px;
+  height: 30px;
+  background: inherit;
+  border-radius: 70px;
+  color: rgba(85, 37, 216, 0.808);
+  cursor: pointer;
+  font-weight: bold;
+  border-color: rgb(32, 212, 182);
+}
