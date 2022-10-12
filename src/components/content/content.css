@@ -1,11 +1,12 @@
 .contentContainer {
   display: flex;
   align-items: center;
-  align-content: flex-end;
   flex-direction: row;
   flex-wrap: wrap;
   margin-bottom: 200px;
-  margin-left: 50px;
+  margin-top: 50px;
+  margin-left: 13vw;
+  margin-right: 8vw;
 }
 .fraseContent {
   display: inline-block;
@@ -14,4 +15,42 @@
 }
 .fraseContent.dark {
   color: rgb(65, 216, 171);
+}
+.containerLoading {
+  width: 40px;
+  margin: 70px auto;
+}
+.dot {
+  width: 10px;
+  height: 10px;
+  display: inline-block;
+  border-radius: 50%;
+}
+.dot1 {
+  background-color: #23bb9c;
+  animation: jump-up 0.6s 0.1s linear infinite;
+}
+.dot2 {
+  background-color: #4a83ff;
+  animation: jump-up 0.6s 0.2s linear infinite;
+}
+.dot3 {
+  background-color: #5f17a3;
+  animation: jump-up 0.6s 0.3s linear infinite;
+}
+
+@keyframes jump-up {
+  50% {
+    transform: translate(0, 15px);
+  }
+}
+.fraseNoResults {
+  font-size: 20px;
+  color: #7839cd;
+  text-align: center;
+  padding-top: 100px;
+  width: 100%;
+}
+.gifContainer {
+  min-width: 240px;
 }

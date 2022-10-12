@@ -1,7 +1,7 @@
 import GifItems from "../content/gifElement/gif";
 import "./content.css";
 
-export default function Content({ list, darkMode }) {
+export default function Content({ list, darkMode, show, loading }) {
   const renderGif = (item) => {
     const gif = item.images.downsized.url;
     return (
@@ -16,15 +16,29 @@ export default function Content({ list, darkMode }) {
     );
   };
 
+  if (loading)
+    return (
+      <div className="containerLoading">
+        <div className="dot dot1"></div>
+        <div className="dot dot2"></div>
+        <div className="dot dot3"></div>
+      </div>
+    );
+
   return (
     <div className="contentContainer">
       <p className={`fraseContent ${darkMode} ? "dark" : "light"`}> </p>
       {!list || !list.length === 0 ? (
-        <p> </p>
+        <p></p>
       ) : list.length ? (
         list.map((item) => renderGif(item))
       ) : (
-        <p> ... loading </p>
+        show && (
+          <p className="fraseNoResults">
+            {" "}
+            ... no se encontraron resultados...{" "}
+          </p>
+        )
       )}
     </div>
   );

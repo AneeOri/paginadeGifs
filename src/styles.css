@@ -14,8 +14,12 @@ a {
 .mainContainer {
   display: flex;
   flex-direction: column;
-  width: 85%;
+  width: 80%;
   height: 80%;
   margin-top: 10px;
   border: rgb(65, 216, 171) solid 2px;
+  justify-content: center;
+}
+.dark p {
+  color: rgb(65, 216, 171);
 }
